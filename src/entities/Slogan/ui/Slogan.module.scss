@@ -1,0 +1,60 @@
+.Slogan {
+    padding: 190px 0 250px;
+
+    p,
+    h1,
+    button {
+        color: var(--color-white);
+    }
+
+    p {
+        font: 500 16px/20px 'Noto Serif JP', sans-serif;
+        letter-spacing: 1.6px;
+        max-width: 850px;
+    }
+    
+    h1 {
+        font: 700 57px/80px 'Noto Serif JP', sans-serif;
+        margin-top: 5px;
+        max-width: 850px;
+    }
+    
+    button {
+        border-radius: 5px;
+        background: var(--color-orange);
+        backdrop-filter: blur(17px);
+        padding: 22px 45px;
+        text-transform: uppercase;
+        font: 500 20px/20px 'Roboto Slab', sans-serif;
+        cursor: pointer;
+        margin-top: 50px;
+        border: none;
+        
+        &:hover {
+            transform: scale(1.05);
+        }
+        
+        &:active {
+            transform: scale(0.99);
+        }
+    }
+}
+@media(width<= 450px) {
+    
+    .Slogan {
+        padding: 150px 0 175px;
+    
+        p {
+            font-size: 14px;
+        }
+
+        h1 {
+            font-size: 35px;
+            line-height: 50px;
+        }
+        
+        button {
+            font-size: 16px;
+        }
+    }
+}
