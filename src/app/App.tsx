@@ -1,4 +1,5 @@
 import { Header } from 'entities/Header';
+import { SaleUp } from 'entities/SaleUp';
 import { Slogan } from 'entities/Slogan';
 
 const App = (): any => {
@@ -8,6 +9,7 @@ const App = (): any => {
                 <Header />
                 <Slogan />
             </div>
+            <SaleUp />
         </div>
     )
 }

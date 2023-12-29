@@ -4,34 +4,7 @@ import cls from './Header.module.scss';
 import logo from 'shared/assets/icons/header/logo.png';
 import loupe from 'shared/assets/icons/header/loupe.png';
 import cart from 'shared/assets/icons/header/cart.png';
-
-interface Link {
-    linkName: string
-    href: string
-}
-
-const headerLinks: Link[] = [
-    {
-        linkName: 'home',
-        href: '#'
-    },
-    {
-        linkName: 'shop',
-        href: '#'
-    },
-    {
-        linkName: 'featured',
-        href: '#'
-    },
-    {
-        linkName: 'pages',
-        href: '#'
-    },
-    {
-        linkName: 'blogs',
-        href: '#'
-    }
-]
+import { headerLinks } from '../lib/headerLinks';
 
 export const Header = memo(() => {
     const links = headerLinks.map((item, id) => {
