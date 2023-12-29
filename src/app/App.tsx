@@ -1,7 +1,9 @@
+import { Header } from 'entities/Header';
+
 const App = (): any => {
     return (
         <div className="app">
-            <h1>Hello, World!</h1>
+            <Header />
         </div>
     )
 }

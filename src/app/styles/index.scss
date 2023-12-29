@@ -1,7 +1,54 @@
+/* stylelint-disable */
+
 @import './reset';
 @import '../variables/global';
 
-/* stylelint-disable */
+@font-face {
+    font-family: Roboto;
+    src: url('../../shared/assets/fonts/Roboto-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: Roboto;
+    src: url('../../shared/assets/fonts/Roboto-Bold.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Noto Serif JP';
+    src: url('../../shared/assets/fonts/NotoSerifJP-Medium.otf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Noto Serif JP';
+    src: url('../../shared/assets/fonts/NotoSerifJP-Medium.otf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Noto Serif JP';
+    src: url('../../shared/assets/fonts/NotoSerifJP-Bold.otf');
+    font-weight: 700;
+}
+@font-face {
+    font-family: 'Roboto Slab';
+    src: url('../../shared/assets/fonts/NotoSerifJP-Bold.otf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: Redressed;
+    src: url('../../shared/assets/fonts/Redressed-Regular.ttf');
+    font-weight: 400;
+}
+
 .app {
     font-family: sans-serif;
+}
+
+body {
+    background: #2E2E2E;
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
