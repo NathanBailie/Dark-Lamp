@@ -56,3 +56,16 @@ body {
 .main-bg {
     background: url('../../shared/assets/img/bg/main-bg.png') center center/cover no-repeat;
 }
+
+.button {
+    cursor: pointer;
+    transition: all 0.1s ease;
+        
+    &:hover {
+        transform: scale(1.05);
+    }
+    
+    &:active {
+        transform: scale(0.99);
+    }
+}

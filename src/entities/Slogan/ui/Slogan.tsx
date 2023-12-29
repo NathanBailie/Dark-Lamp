@@ -13,7 +13,7 @@ export const Slogan = memo(() => {
                     Long-lasting lights,
                     to make your future bright.
                 </h1>
-                <button>SHOP NOW</button>
+                <button className={classNames('', {}, ['button'])}>SHOP NOW</button>
             </div>
         </div>
     );

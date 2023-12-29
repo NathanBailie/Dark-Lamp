@@ -24,19 +24,10 @@
         background: var(--color-orange);
         backdrop-filter: blur(17px);
         padding: 22px 45px;
-        text-transform: uppercase;
         font: 500 20px/20px 'Roboto Slab', sans-serif;
-        cursor: pointer;
         margin-top: 50px;
         border: none;
-        
-        &:hover {
-            transform: scale(1.05);
-        }
-        
-        &:active {
-            transform: scale(0.99);
-        }
+        text-transform: uppercase;
     }
 }
 @media(width<= 450px) {

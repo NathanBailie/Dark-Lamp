@@ -1,0 +1,113 @@
+.Products {
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    h2 {
+        color: var(--color-white);
+        font: 500 38px/20px 'Noto Serif JP', sans-serif;
+        text-align: center;
+    }
+
+    &__tabs {
+        margin-top: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    &__tab {
+        width: 135px;
+        height: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        color: var(--color-white);
+        background: none;
+        border: 1px solid var(--color-orange);
+        transform: all 0.1s ease;
+        cursor: pointer;
+        user-select: none;
+        
+        &.active {
+            background: var(--color-orange);
+        }
+    }
+    
+    &__lamps {
+        max-width: calc(262px * 4 + 30px * 3);
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 262px);
+        gap: 30px;
+        margin-top: 70px;
+        justify-content: center;
+    }
+    
+    &__lampImg {
+        max-width: 195px;
+        height: 185px;
+    }
+    
+    &__lamp {
+        min-height: 330px;
+        padding: 20px;
+        background: var(--color-dark-gray);
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        animation: show 2s 1;
+        
+        h3 {
+            color: var(--color-white);
+            font: 500 16px/20px 'Noto Serif JP', sans-serif;
+            margin-top: 10px;
+        }
+        
+        p {
+            color: var(--color-orange);
+            font: 500 20px/20px 'Noto Serif JP', sans-serif;
+            margin-top: 10px;
+        }
+    }
+    
+    &__colors {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+        position: absolute;
+        bottom: 21px;
+    }
+    
+    &__color {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        border: 3px solid var(--color-dark-gray);
+        cursor: pointer;
+        
+        &.active {
+            border: 3px solid var(--color-white);
+        }
+    }
+}
+@keyframes show {
+
+    from {
+        opacity: 0;
+    }
+    
+    to {
+        opacity: 1;
+    }
+}
