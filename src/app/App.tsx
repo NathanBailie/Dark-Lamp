@@ -1,4 +1,5 @@
 import { Blog } from 'entities/Blog';
+import { Footer } from 'entities/Footer';
 import { Header } from 'entities/Header';
 import { NewCollections } from 'entities/NewCollections';
 import { Products } from 'entities/Products';
@@ -20,6 +21,7 @@ const App = () => {
             <Way />
             <Blog />
             <Subscribe />
+            <Footer />
         </div>
     )
 }

@@ -1,7 +1,7 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import { memo } from 'react';
-import cls from './Subscribe.module.scss';
 import telegram from 'shared/assets/icons/telegram.png';
+import cls from './Subscribe.module.scss';
 
 export const Subscribe = memo(() => {
     return (
