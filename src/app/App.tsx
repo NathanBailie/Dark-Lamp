@@ -3,6 +3,7 @@ import { NewCollections } from 'entities/NewCollections';
 import { Products } from 'entities/Products';
 import { SaleUp } from 'entities/SaleUp';
 import { Slogan } from 'entities/Slogan';
+import { Way } from 'entities/Way';
 
 const App = () => {
     return (
@@ -14,6 +15,7 @@ const App = () => {
             <SaleUp />
             <Products />
             <NewCollections />
+            <Way />
         </div>
     )
 }

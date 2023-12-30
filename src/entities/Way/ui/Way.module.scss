@@ -1,0 +1,52 @@
+.Way {
+    padding: 100px 240px;
+    background: url('../../../shared/assets/img/bg/yellow-lamp-bg.jpg') top right/cover no-repeat;
+
+    &__container {
+        position: relative;
+    }
+
+    &__wrapper {
+        max-width: 500px;
+    }
+
+    h2 {
+        color: var(--color-white);
+        font: 500 38px/59px 'Noto Serif JP', sans-serif;
+    }
+    
+    p {
+        color: var(--color-white);
+        font: 400 16px/23px Roboto, sans-serif;
+        margin-top: 25px;
+        opacity: 0.7;
+    }
+    
+    button {
+        color: var(--color-white);
+        background: var(--color-orange);
+        font: 500 18px/20px 'Roboto Slab', sans-serif;
+        margin-top: 45px;
+        text-transform: uppercase;
+        border: none;
+        border-radius: 5px;
+        padding: 22px 50px;
+    }
+}
+@media(width<= 900px) {
+
+    .Way {
+        padding: 100px;
+    }
+}
+@media(width<= 500px) {
+
+    .Way {
+        padding: 50px 30px;
+        
+        h2 {
+            font-size: 32px;
+            line-height: 50px;
+        }
+    }
+}
