@@ -1,0 +1,112 @@
+.NewCollections {
+    padding-bottom: 135px;
+    
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    
+    &__info {
+        max-width: 580px;
+    }
+
+    &__title {
+        color: var(--color-white);
+        font: 500 38px/37px 'Noto Serif JP', sans-serif;
+    }
+    
+    &__subtitle {
+        color: var(--color-white);
+        font: 500 16px/23px 'Noto Serif JP', sans-serif;
+        max-width: 500px;
+        margin-top: 15px;
+    } 
+    
+    &__items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-top: 55px;
+    }
+    
+    &__item {
+        display: flex;
+        flex-direction: column;
+
+        img {
+            width: 277px;
+            margin: 0 auto;
+            height: 277px;
+        }
+        
+        h3 {
+            color: var(--color-white);
+            font: 500 16px/20px 'Noto Serif JP', sans-serif;
+            margin-top: 10px;
+        }
+        
+        p {
+            color: var(--color-orange);
+            font: 500 20px/20px 'Noto Serif JP', sans-serif;
+            margin-top: 10px;
+        }
+        
+        button {
+            padding: 12px 28px;
+            color: var(--color-orange);
+            font: 500 16px/20px 'Roboto Slab', sans-serif;
+            border-radius: 5px;
+            border: 1px solid var(--color-orange);
+            background: none;
+            margin-top: 25px;
+        }
+    }
+    
+    &__image {
+        max-width: 552px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        user-select: none;
+        
+        img {
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+        }
+        
+        button {
+            position: absolute;
+            padding: 22px 50px;
+            background: var(--color-white);
+            bottom: 30px;
+            border: none;
+            color: var(--color-orange);
+            font: 500 18px/20px 'Roboto Slab', sans-serif;
+            opacity: 0.8;
+        }
+    }
+}
+@media(width<= 900px) {
+
+    .NewCollections {
+    
+        &__container {
+            gap: 30px;
+            flex-direction: column;
+        }
+        
+        &__title,
+        &__subtitle {
+            text-align: center;
+        }
+        
+        &__items {
+            flex-direction: column;
+        }
+    }
+}

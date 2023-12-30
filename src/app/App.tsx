@@ -1,9 +1,10 @@
 import { Header } from 'entities/Header';
+import { NewCollections } from 'entities/NewCollections';
 import { Products } from 'entities/Products';
 import { SaleUp } from 'entities/SaleUp';
 import { Slogan } from 'entities/Slogan';
 
-const App = (): any => {
+const App = () => {
     return (
         <div className="app">
             <div className="main-bg">
@@ -12,6 +13,7 @@ const App = (): any => {
             </div>
             <SaleUp />
             <Products />
+            <NewCollections />
         </div>
     )
 }
