@@ -4,6 +4,7 @@ import { NewCollections } from 'entities/NewCollections';
 import { Products } from 'entities/Products';
 import { SaleUp } from 'entities/SaleUp';
 import { Slogan } from 'entities/Slogan';
+import { Subscribe } from 'entities/Subscribe';
 import { Way } from 'entities/Way';
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
             <NewCollections />
             <Way />
             <Blog />
+            <Subscribe />
         </div>
     )
 }
