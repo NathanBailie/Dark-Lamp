@@ -13,7 +13,7 @@ Responsive design of a beautiful single-page website
 * My own react build. All dependencies are manually configured
 * React 18
 * TypeScript (interfaces)
-* SCSS (flex, grid), css modules
+* SCSS (flex, grid, css-variables, css modules)
 * Webpack (manually configured with decomposition, env variables)
 * Linters (ESLint, Stylelint)
 * Husky (pre-commit)
